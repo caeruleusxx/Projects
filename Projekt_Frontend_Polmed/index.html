@@ -1,0 +1,568 @@
+<DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <link rel="stylesheet" href="style/style.css" type="text/css"/>
+        <link rel="stylesheet" href="style/fontello-a6148469/css/fontello.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+        <!-- <script src="script.js"></script> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/map.js"></script>
+        <title> Polmed </title>
+    </head>
+    
+    <body>
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo polmed nowe.svg" width="240" height="67" fill="white" id=""></img></a>
+              </div>
+            <ul class="links">
+                
+                <li><a href="#work">Kontakt</a></li>
+                <li><a href="#projects">O nas</a></li>
+                <li><a href="#contact">Kadra</a></li>
+                <li><a href="#home">Zaloguj się</a></li>
+                <li><a href="#about">Zarejestruj się</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+        
+     
+    
+   
+        <div id="filtry">
+            <button class="button-filter" id="wszyscy">Wszyscy Lekarze</button>
+            <button class="button-filter" id="pediatrzy">Pediatrzy</button>
+            <button class="button-filter" id="rodzinni">Lekarze Rodzinni</button>
+        </div>
+    
+        <main>
+            <div class="lekarz_rodzinny">
+                <div class="container">
+                    <div class="block">
+                        <div class="right">
+                            <a href="index2.html?lekarz=Piotr%20Nowak"><img src="images/lekarz1.jpg" class="doc-pic" alt="Piotr Nowak"></img></a>
+                            <div class="media-body">
+                                dr n. med.
+                                <h2 class="doc-name"> <a href="#" class="name"> Piotr Nowak </a> </h2>
+                                Lekarz rodzinny <br/> <br/>
+
+                                <a href="index2.html?lekarz=Piotr%20Nowak" class="button"> Umów się na wizytę! </a>
+                            </div>
+
+                            <div class="media-info">
+                                <span class="icon-user green"></span> Email: piotr.nowak@test.com <br />
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTelefon: wyświetl numer <br />
+                                <span class="icon-location green"></span> Podgórska 36, 31-536 Kraków <br />
+                                <span class="icon-info green"></span> Konsultacje już od 220zł <br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block1">
+                        <div class="left">
+                            <span class="calendar-header"> Sprawdź wolne terminy </span> <br /> <hr />
+                            <table>
+                                <tr>
+                                    <th id="pon">Pon.</th>
+                                    <th id="wt">Wt.</th>
+                                    <th id="sr">Śr.</th>
+                                    <th id="czw">Czw.</th>
+                                    <th id="pt">Pt.</th>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Piotr%20Nowak" class="date-available" >11.00</a></td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Piotr%20Nowak" class="date-available">11.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Piotr%20Nowak" class="date-available">12.00</a></td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Piotr%20Nowak" class="date-available">12.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Piotr%20Nowak" class="date-available">13.00</a></td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td class="date-unavailable">13.00</td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Piotr%20Nowak" class="date-available">14.00</a></td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Piotr%20Nowak" class="date-available">14.00</a></td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Piotr%20Nowak" class="date-available">14.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Piotr%20Nowak" class="date-available">15.00</a></td>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Piotr%20Nowak" class="date-available">15.00</a></td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Piotr%20Nowak" class="date-available">15.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=16.00&lekarz=Piotr%20Nowak" class="date-available">16.00</a></td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td> <a href="index2.html?date=16.00&lekarz=Piotr%20Nowak" class="date-available">16.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Piotr%20Nowak" class="date-available">17.00</a></td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Piotr%20Nowak" class="date-available">17.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Piotr%20Nowak" class="date-available">18.00</a></td>
+                                    <td class="date-unavailable">18.00</td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Piotr%20Nowak" class="date-available">18.00</a></td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Piotr%20Nowak" class="date-available">18.00</a></td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Piotr%20Nowak" class="date-available">18.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Piotr%20Nowak" class="date-available">19.00</a></td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Piotr%20Nowak" class="date-available">19.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Piotr%20Nowak" class="date-available">20.00</a></td>
+                                    <td class="date-unavailable">20.00</td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Piotr%20Nowak" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Piotr%20Nowak" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Piotr%20Nowak" class="date-available">20.00</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="lekarz_pediatra">
+                <div class="container">
+                    <div class="block">
+                        <div class="right">
+                            <a href="index2.html?lekarz=Katarzyna%20Kowalska"><img src="images/lekarz2.jpg" class="doc-pic" alt="Katarzyna Kowalska"></img></a>
+                            <div class="media-body">
+                                lek.
+                                <h2 class="doc-name"> <a href="index2.html" class="name"> Katarzyna Kowalska </a> </h2>
+                                Pediatra <br/> <br/>
+
+                                <a href="index2.html?lekarz=Katarzyna%20Kowalska" class="button"> Umów się na wizytę! </a>
+                            </div>
+
+                            <div class="media-info">
+                                <span class="icon-user green"></span> Email: kat.kowalska@interia.pl <br />
+                                <span class="icon-location green"></span> Józefa Marcika 12,  30-167 Kraków <br />
+                                <span class="icon-info green"></span> Konsultacje już od 170zł <br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block1">
+                        <div class="left">
+                            <span class="calendar-header"> Sprawdź wolne terminy </span> <br /> <hr />
+                            <table>
+                                <tr>
+                                    <th id="pon">Pon.</th>
+                                    <th id="wt">Wt.</th>
+                                    <th id="sr">Śr.</th>
+                                    <th id="czw">Czw.</th>
+                                    <th id="pt">Pt.</th>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Katarzyna%20Kowalska" class="date-available">11.00</a></td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Katarzyna%20Kowalska" class="date-available">11.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Katarzyna%20Kowalska" class="date-available">12.00</a></td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Katarzyna%20Kowalska" class="date-available">12.00</a></td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Katarzyna%20Kowalska" class="date-available">12.00</a></td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Katarzyna%20Kowalska" class="date-available">12.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Katarzyna%20Kowalska" class="date-available">13.00</a></td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Katarzyna%20Kowalska" class="date-available">13.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Katarzyna%20Kowalska" class="date-available">14.00</a></td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Katarzyna%20Kowalska" class="date-available">14.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Katarzyna%20Kowalska" class="date-available">15.00</a></td>
+                                    <td class="date-unavailable">15.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=16.00&lekarz=Katarzyna%20Kowalska" class="date-available">16.00</a></td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Katarzyna%20Kowalska" class="date-available">17.00</a></td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Katarzyna%20Kowalska" class="date-available">17.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Katarzyna%20Kowalska" class="date-available">18.00</a></td>
+                                    <td class="date-unavailable">18.00</td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Katarzyna%20Kowalska" class="date-available">18.00</a></td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Katarzyna%20Kowalska" class="date-available">18.00</a></td>
+                                    <td class="date-unavailable">18.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Katarzyna%20Kowalska" class="date-available">19.00</a></td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Katarzyna%20Kowalska" class="date-available">19.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Katarzyna%20Kowalska" class="date-available">20.00</a></td>
+                                    <td class="date-unavailable">20.00</td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Katarzyna%20Kowalska" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Katarzyna%20Kowalska" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Katarzyna%20Kowalska" class="date-available">20.00</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="lekarz_rodzinny">
+                <div class="container">
+                    <div class="block">
+                        <div class="right">
+                            <a href="index2.html?lekarz=Aneta%20Wiśniewska"><img src="images/lekarz3.jpg" class="doc-pic" alt="Aneta Wiśniewska"></img></a>
+                            <div class="media-body">
+                                dr n. med.
+                                <h2 class="doc-name"> <a href="index2.html?lekarz=Aneta%20Wiśniewska" class="name"> Aneta Wiśniewska </a> </h2>
+                                Lekarz rodzinny <br/> <br/>
+
+                                <a href="index2.html" class="button"> Umów się na wizytę! </a>
+                            </div>
+
+                            <div class="media-info">
+                                <span class="icon-user green"></span> Email: aneta.wisnia@gmail.com <br />
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTelefon: wyświetl numer <br />
+                                <span class="icon-location green"></span> Przykładowa 12, 17-198 Kraków <br />
+                                <span class="icon-info green"></span> Konsultacje już od 250zł <br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block1">
+                        <div class="left">
+                            <span class="calendar-header"> Sprawdź wolne terminy </span> <br /> <hr />
+                            <table>
+                                <tr>
+                                    <th id="pon">Pon.</th>
+                                    <th id="wt">Wt.</th>
+                                    <th id="sr">Śr.</th>
+                                    <th id="czw">Czw.</th>
+                                    <th id="pt">Pt.</th>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Aneta%20Wiśniewska" class="date-available">11.00</a></td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Aneta%20Wiśniewska" class="date-available">11.00</a></td>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Aneta%20Wiśniewska" class="date-available">11.00</a></td>
+                                    <td> <a href="index2.html?date=11.00&lekarz=Aneta%20Wiśniewska" class="date-available">11.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Aneta%20Wiśniewska" class="date-available">12.00</a></td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Aneta%20Wiśniewska" class="date-available">12.00</a></td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Aneta%20Wiśniewska" class="date-available">12.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Aneta%20Wiśniewska" class="date-available">13.00</a></td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Aneta%20Wiśniewska" class="date-available">13.00</a></td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Aneta%20Wiśniewska" class="date-available">13.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td class="date-unavailable">14.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Aneta%20Wiśniewska" class="date-available">15.00</a></td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Aneta%20Wiśniewska" class="date-available">15.00</a></td>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Aneta%20Wiśniewska" class="date-available">15.00</a></td>
+                                    <td class="date-unavailable">15.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=16.00&lekarz=Aneta%20Wiśniewska" class="date-available">16.00</a></td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td> <a href="index2.html?date=16.00&lekarz=Aneta%20Wiśniewska" class="date-available">16.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Aneta%20Wiśniewska" class="date-available">17.00</a></td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Aneta%20Wiśniewska" class="date-available">17.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Aneta%20Wiśniewska" class="date-available">18.00</a></td>
+                                    <td class="date-unavailable">18.00</td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Aneta%20Wiśniewska" class="date-available">18.00</a></td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Aneta%20Wiśniewska" class="date-available">18.00</a></td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Aneta%20Wiśniewska" class="date-available">18.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Aneta%20Wiśniewska" class="date-available">19.00</a></td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Aneta%20Wiśniewska" class="date-available">19.00</a></td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Aneta%20Wiśniewska" class="date-available">19.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Aneta%20Wiśniewska" class="date-available">20.00</a></td>
+                                    <td class="date-unavailable">20.00</td>
+                                    <td class="date-unavailable">20.00</td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Aneta%20Wiśniewska" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Aneta%20Wiśniewska" class="date-available">20.00</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="lekarz_pediatra">
+                <div class="container">
+                    <div class="block">
+                        <div class="right">
+                            <a href="index2.html?lekarz=Adam%20Janicki"> <img src="images/lekarz4.jpg" class="doc-pic" alt="Adam Męczywór"></img> </a>
+                            <div class="media-body">
+                                dr n. med.
+                                <h2 class="doc-name"> <a href="index2.html" class="name"> Adam Janicki </a> </h2>
+                                Pediatra <br/> <br/>
+
+                                <a href="index2.html?lekarz=Adam%20Janicki" class="button"> Umów się na wizytę! </a>
+                            </div>
+
+                            <div class="media-info">
+                                <span class="icon-user green"></span> Email: ajanicki@test.com <br />
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTelefon: wyświetl numer <br />
+                                <span class="icon-location green"></span> Podgórska 36, 31-536 Kraków <br />
+                                <span class="icon-info green"></span> Konsultacje już od 220zł <br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="block1">
+                        <div class="left">
+                            <span class="calendar-header"> Sprawdź wolne terminy </span> <br /> <hr />
+                            <table>
+                                <tr>
+                                    <th id="pon">Pon.</th>
+                                    <th id="wt">Wt.</th>
+                                    <th id="sr">Śr.</th>
+                                    <th id="czw">Czw.</th>
+                                    <th id="pt">Pt.</th>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html/?date=11.00&lekarz=Adam%20Janicki" class="date-available">11.00</a></td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td class="date-unavailable">11.00</td>
+                                    <td> <a href="index2.html/?date=11.00&lekarz=Adam%20Janicki" class="date-available">11.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Adam%20Janicki" class="date-available">12.00</a></td>
+                                    <td class="date-unavailable">12.00</td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Adam%20Janicki" class="date-available">12.00</a></td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Adam%20Janicki" class="date-available">12.00</a></td>
+                                    <td> <a href="index2.html?date=12.00&lekarz=Adam%20Janicki" class="date-available">12.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Adam%20Janicki" class="date-available">13.00</a></td>
+                                    <td class="date-unavailable">13.00</td>
+                                    <td> <a href="index2.html?date=13.00&lekarz=Adam%20Janicki" class="date-available">13.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Adam%20Janicki" class="date-available">14.00</a></td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td class="date-unavailable">14.00</td>
+                                    <td> <a href="index2.html?date=14.00&lekarz=Adam%20Janicki" class="date-available">14.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td class="date-unavailable">15.00</td>
+                                    <td> <a href="index2.html?date=15.00&lekarz=Adam%20Janicki" class="date-available">15.00</a></td>
+                                    <td class="date-unavailable">15.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=16.00&lekarz=Adam%20Janicki" class="date-available">16.00</a></td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                    <td class="date-unavailable">16.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Adam%20Janicki" class="date-available">17.00</a></td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td class="date-unavailable">17.00</td>
+                                    <td> <a href="index2.html?date=17.00&lekarz=Adam%20Janicki" class="date-available">17.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Adam%20Janicki" class="date-available">18.00</a></td>
+                                    <td class="date-unavailable">18.00</td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Adam%20Janicki" class="date-available">18.00</a></td>
+                                    <td> <a href="index2.html?date=18.00&lekarz=Adam%20Janicki" class="date-available">18.00</a></td>
+                                    <td class="date-unavailable">18.00</td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Adam%20Janicki" class="date-available">19.00</a></td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td class="date-unavailable">19.00</td>
+                                    <td> <a href="index2.html?date=19.00&lekarz=Adam%20Janicki" class="date-available">19.00</a></td>
+                                </tr>
+                                <tr>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Adam%20Janicki" class="date-available">20.00</a></td>
+                                    <td class="date-unavailable">20.00</td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Adam%20Janicki" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Adam%20Janicki" class="date-available">20.00</a></td>
+                                    <td> <a href="index2.html?date=20.00&lekarz=Adam%20Janicki" class="date-available">20.00</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+<!--
+        <nav>
+            <div class="block2">
+                <button type="button" id="map-header"> Znajdź nasze placówki! </button>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7749.120796969593!2d19.95155833231527!3d50.06413251825448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b19d0c29e43%3A0x1bcd0ea680d312d4!2sPOLMED!5e0!3m2!1sen!2spl!4v1671292377846!5m2!1sen!2spl" 
+                    width="321.5" height="450" style="border:0;" allowfullscreen="" loading="lazy" id="map" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </nav>
+    -->
+<div class="body_footer">
+
+        <footer class="footer">
+        <div class="footer_container">
+         <div class="footer_col">
+            <h4>POLMED</h4>  
+              <ul>
+                <li> <a href="#">Nasze placówki</a></li>
+                <li> <a href="#">Przewodnik pacjenta</a></li>
+                <li> <a href="#">Certyfikaty</a></li>
+                <li> <a href="#">Wyniki badań</a></li>
+                <li> <a href="#">Współpraca</a></li>
+                <li> <a href="#">Kontakt</a></li>
+              </ul>
+        
+            
+            
+        </div>
+        <div class="footer_col">
+            <h4>Oferta</h4> 
+            <ul>
+                <li> <a href="#">Opieka medyczna</a></li>
+                <li> <a href="#">Badania</a></li>
+                <li> <a href="#">Szczepienia</a></li>
+                <li> <a href="#">Diagnostyka</a></li>
+                <li> <a href="#">Vouchery</a></li>
+                <li> <a href="#">Opieka medyczna</a></li>
+            </ul>
+            
+        
+        </div>
+         <div class="footer_col">
+            <h4>Informacje</h4> 
+            <ul>
+                <li> <a href="#">Wszystkie artykuły</a></li>
+                <li> <a href="#">Koronawirus</a></li>
+                <li> <a href="#">Profilaktyka</a></li>
+                <li> <a href="#">Aktualności</a></li>
+                <li> <a href="#">Lekarze</a></li>
+                <li> <a href="#">Opinie</a></li>
+            </ul>
+            
+            
+
+
+         </div>
+         <div class="footer_col">
+            <h4>Logowanie</h4> 
+            <ul>
+                <li> <a href="#">Portal Pacjenta</a></li>
+                <li> <a href="#">Portal Pracodawcy</a></li>
+                <li> <a href="#">Medycyn Pracy</a></li>
+                <li> <a href="#">Partner Medyczny</a></li>
+                <li> <a href="#">E-Pacjent</a></li>
+            </ul>
+        </div>
+
+            <div class="footer_col social_links">
+                <h4> Social media </h4>
+                
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.nfz.gov.pl/"><i class="fab">NFZ</i></a>
+
+
+            </div>
+        
+    
+        </div>  
+  </footer>
+</div>
+    
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/filters.js"></script>
+</body>
+    

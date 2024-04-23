@@ -1,0 +1,381 @@
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: #0bd575;
+}
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: rgb(0, 0, 0);
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: rgb(0, 0, 0);
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: rgba(255, 255, 255, 0.8);
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+.right {
+	margin-right: 40px;
+    width: auto;
+    padding: 20px;
+    height: auto;
+}
+.media-body {
+    float: left;
+    padding-left: 20px;
+}
+.doc-pic {
+    border: solid 1px #0ea35b;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    float: left;
+}
+.doc-pic:hover .overlay{
+    opacity: 0.8;
+    background-color: green;
+}
+
+.doc-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+span.green {
+    color: #0ea35b;
+    font-size: 18px;
+}
+
+
+#main3{
+    height: auto;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+
+}
+
+.media-info {
+    clear: both;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.kontener-1{
+	margin-top: 30px;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+	justify-content: space-around;
+}
+.potw{
+    font-size: 20;
+}
+.l{
+    display: flex;
+    font-size: 19;
+}
+.lekarz1{
+    font-weight: bold;
+    
+}
+.lekarz-name{
+    margin-left: 50px;
+}
+.termin-main{
+    margin-top: 5px;
+    display: flex;
+    font-size: 19;
+}
+.termin{
+    font-weight: bold;
+}
+.termin-info{
+    margin-left: 48px;
+}
+.cel{
+    margin-top: 5px;
+    font-size: 19;
+    display: flex;
+}
+.cel-w{
+    font-weight: bold;
+}
+.cel-w-info{
+    margin-left: 25px;
+}
+.cena-main{
+    margin-top: 5px;
+    display: flex;
+    font-size: 19;
+
+}
+.cena{
+    font-weight: bold;
+}
+.cena-info{
+    margin-left: 67px;
+}
+
+
+.odwolanie{
+  margin-top: 50px;
+}
+.zasady{
+    font-size: 20;
+}
+.odwolanie-flex{
+    font-size: 19;
+    display: flex;
+}
+.odwolanie-napis{
+
+    font-weight: bold;
+
+}
+.odwolanie-czas{
+   margin-left: 28px;
+}
+
+
+hr{
+    margin-top: 30px;
+    border-top: 4px solid #0bd575;
+}
+
+
+button{
+    
+    margin-top: 35px;
+    font-size: 20px;
+    padding:15px;
+    border: none;
+    background-color: #0bd575;
+    margin-right: 20px;
+    border-radius: 7px;
+
+}
+
+.media-body{
+    margin-top: 35px;
+}
+
+hr{
+   
+    margin: auto;
+    margin-top: 40px;
+}
+
+.anuluj {
+    border: none;
+    background-color: #d1d1d1;
+}
+
+.anuluj:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.potwierdz:hover {
+    cursor: pointer;
+    background-color: #09874b;
+}
+
+.status-confirmed {
+    color: #0ea35b;
+    font-size: 24px;
+}
+
+
+.body_footer{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+
+}
+.footer {
+	width: auto;
+    background-color: #202020;
+    padding: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    clear: both;
+	
+}
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: auto;   
+    align-content: space-around;  
+}
+
+ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer_col {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+.footer_col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.footer_col h4::before{
+     content:'';
+     position: absolute;
+     left: 0;
+     bottom: -10px;
+     background-color: #0bd575;
+     height: 2px;
+     box-sizing: border-box;
+     width: 50px;
+}
+.footer_col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer_col ul li a:hover{
+    color:#ffffff ;
+    /* padding-left: 10px; */
+}
+.social_links a{
+    font-size: 30;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    color: #b1b1b1;
+    transition: all 0.5s ease;
+}
+.social_links a:hover{
+    color: #ffffff;  
+}

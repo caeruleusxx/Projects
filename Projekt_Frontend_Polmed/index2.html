@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style/style2.css">
+     
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/script3.js"></script>
+    <script>
+        function dalej() {
+            const query = window.location.search;
+            const urlParams = new URLSearchParams(query);
+            var lekarz = urlParams.get('lekarz');
+            var date = urlParams.get('date')
+            var cel = $('#cel').find(":selected").text();
+
+            location.href = 'index3.html?date='+date+'&lekarz='+lekarz+'&cel='+cel;
+        };
+    </script>
+</head>
+
+<body onload="scripts/script3.js">
+    <div class="container">
+        <header>Rejestracja</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Dane osobowe</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Imie i nazwisko</label>
+                            <input type="text" placeholder="Wprowadż imie i nazwisko" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Data urodzenia</label>
+                            <input type="date" placeholder="Wprowadź datę urodzenia" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>E-mail</label>
+                            <input type="text" placeholder="Wprowadź swój email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numer telefonu</label>
+                            <input type="number" placeholder="Wprowadź swój nr telefonu" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Płeć</label>
+                            <select required>
+                                <option disabled selected>Wybierz płeć</option>
+                                <option>Mężczyzna</option>
+                                <option>Kobieta</option>
+                                
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numer Pesel</label>
+                            <input type="text" placeholder="Wprowadź pesel" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Szczegóły wizyty</span>
+
+                    <div class="fields">
+
+                        <div class="input-field">
+                            <label>Cel wizyty</label>
+                            <select id="cel" required>
+                                <option disabled selected>Wybierz cel</option>
+                                <option>Konsultacja</option>
+                                <option>Szczepienie</option>
+                                <option>Choroba</option>
+                                <option>Wypisanie recepty</option>
+                                <option>Wizyta kontrolna</option>
+                                
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Godzina</label>
+                            <select id="godzina" required>
+                                <option disabled selected>Wybierz godzinę</option>
+                                <option>11.00</option>
+                                <option>12.00</option>
+                                <option>13.00</option>
+                                <option>14.00</option>
+                                <option>15.00</option>
+                                <option>16.00</option>
+                                <option>17.00</option>
+                                <option>18.00</option>
+                                <option>19.00</option>
+                                <option>20.00</option>
+                            </select>
+                        </div>
+                    
+
+                        <div class="input-field">
+                            <label>Data</label>
+                            <input type="date" placeholder="Enter your issued date" required>
+                        </div>
+
+                       
+                    </div>
+
+                    <div class="submit_statue">
+                         <form action="/action_page.php">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> Zgadzam się na przetwarzanie moich danych osobowych dotyczących zdrowia oraz udostępnienie ich profesjonaliście w celu umówienia wizyty.</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2"> Chcę otrzymywać powiadomienia od Polmed. </label><br>
+                          </form>
+
+                    </div>
+                    
+                    <button class="nextBtn" onclick="dalej()">
+                            <span class="btnText" style="text-decoration: none">Dalej</span>
+                            <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+     <script src="script2.js"></script>
+</body>
+</html>
